@@ -8,6 +8,14 @@ class PostsController < ApplicationController
   	post.save
   	redirect_to '/top'
   end
+
+  def index
+  	@posts = Post.all
+  end
+
+  def show
+  end
+
   private
 
   def post_params
